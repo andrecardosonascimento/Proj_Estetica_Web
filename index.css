@@ -1,0 +1,52 @@
+/* cores e estilos do site */
+
+body {
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid rgb(119, 217, 255);
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* Rodapé */
+
+footer img {
+    width: 20px;
+    height: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 2px;
+}
