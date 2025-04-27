@@ -5,57 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/icone/icone_site.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Gisele Estética</title>
-    <link rel="stylesheet" href="estilo/index.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/header.css">
 </head>
 
 <body>
-    <!-- Barra superior -->
-    <nav>
-        <div class="center">
-            <img src="./imagens/exemplo.png"> </img>
+    <header>
+        <nav id="navbar">
+            <i id="nav_logo"> Gisele Coelho </i>
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home"> inicio </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#serviços"> meus serviços </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#agende"> agende </a>
+                </li>
+            </ul>
+
+            <button class="btn-default"> 
+                instagram
+            </button>
+
+            <button id="mobile_btn"> 
+                <i class="fa-solid fa-bars"> </i>
+            </button>
+        </nav>
+
+        <!-- ESTRUTURA MOBILE -->
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home"> inicio </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#serviços"> meus serviços </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#agende"> agende </a>
+                </li>
+            </ul>
+
+            <button class="btn-default"> 
+                instagram
+            </button>
+
         </div>
-        <ul class="bordascabecalho">
-            <li>
-                <a href="index.html"> Sobre Mim </a>
-            </li>
-            <li>
-                <a href="meusservicos.html"> Meus Serviços </a>
-            </li>
-            <li>
-                <a href="agende.html"> Agende Uma Consulta </a>
-            </li>
-        </ul>
-    </nav>
+    </header>
 
-    <!-- Descrição da Pagina - inicial -->
+    <!-- Conteúdo -->
+    <main id="content">
+        <section id="home">
+            <div id="cta">
+                <h1 class="title">
+                    estetica profissional
+                </h1>
+                <p class="description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit repudiandae veniam, pariatur illo magnam a dolores necessitatibus aspernatur eos deserunt dolorem inventore aliquid ducimus excepturi vel ratione ad dignissimos totam?
+                </p>
 
-    <main class="textopagina">
-        <section>
-            <h2> Sobre Mim </h2>
-            <p>
-                A estética é um campo fascinante que explora a natureza da beleza e da percepção. Desde a filosofia clássica até as práticas contemporâneas, a estética influencia não apenas a arte, mas também a forma como percebemos o mundo ao nosso redor, moldando nossas
-                experiências e emoções
-            </p>
-        </section>
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default"> 
+                        Meus Serviços
+                    </a>
 
-        <section>
-            <h2> Conheça o Meu Negócio </h2>
-            <p>
-                A estética é um campo fascinante que explora a natureza da beleza e da percepção. Desde a filosofia clássica até as práticas contemporâneas, a estética influencia não apenas a arte, mas também a forma como percebemos o mundo ao nosso redor, moldando nossas
-                experiências e emoções
-            </p>
+                    <a href="tel:10101010101" id="phone-button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"> </i>
+                                telefone
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+            <div id="banner">
+
+            </div>
         </section>
     </main>
 
-    <footer>
-        <a href="https://www.instagram.com/giselecardosoesteticista/" target="_blank" rel="noopener noreferrer">
-            <img src="./imagens/iconeinsta.svg">
-            <p> Me Siga No Instagram </p>
-
-        </a>
-    </footer>
-
+    <script src="src/javascript/script.js">
+    </script>
 </body>
 
 </html>
